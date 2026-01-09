@@ -1,12 +1,14 @@
 package ru.redhead.reed
 
 class Main {
-    @JvmStatic
-    fun main(args: Array<String>) {
-        java.lang.System.out.printf("Hello and welcome!")
+    companion object KLogging {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            println("Hello and welcome!")
 
-        for (i in 1..5) {
-            println("i = " + i)
+            for (i in 1..5) {
+                println("i = $i")
+            }
         }
     }
 }
