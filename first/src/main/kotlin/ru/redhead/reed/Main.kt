@@ -4,11 +4,9 @@ class Main {
     companion object KLogging {
         @JvmStatic
         fun main(args: Array<String>) {
-            println("Hello and welcome!")
+            logging.info("Start application")
 
-            for (i in 1..5) {
-                println("i = $i")
-            }
+            var uid = "" 
         }
     }
 }
