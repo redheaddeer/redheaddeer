@@ -11,12 +11,12 @@ repositories {
 }
 
 dependencies {
-    implementation klogging, slf4j, log4j
+    implementation klogging, slf4j, log4j, springBootJpa, springBootWeb
 }
 
 test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(16)
+    jvmToolchain(21)
 }

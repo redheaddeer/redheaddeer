@@ -1,12 +1,12 @@
-package red.head.deer
+package red.head.deer.service
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 
-class Main {
+class SimpleService {
     companion object KLogger {
         val log = KotlinLogging.logger("FirstApp")
-        @JvmStatic
-        fun main(args: Array<String>) {
+
+        fun startService() {
             log.info { "Start application" }
 
         }

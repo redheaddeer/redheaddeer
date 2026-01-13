@@ -13,10 +13,10 @@
 
     <!-- Ротация журналов (архивируем старые журналы) -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/myapp.log</file>
+        <file>logs/first.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- Ежедневная ротация журнала -->
-            <fileNamePattern>logs/myapp-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+            <fileNamePattern>logs/myapp-%d{yyyy-MM-dd-ss}.log.zip</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder>
