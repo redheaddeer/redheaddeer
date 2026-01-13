@@ -10,10 +10,22 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    junitBom = "org.junit:junit-bom:5.10.0"
+    junitJupiter = "org.junit.jupiter:junit-jupiter"
+    kotlinJdk8 =  "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    klogging = "io.github.oshai:kotlin-logging-jvm:7.0.13"
+    slf4j = "org.slf4j:slf4j-api:2.0.17"
+    log4j = "ch.qos.logback:logback-classic:1.4.14"
+}
+
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation platform(junitBom),
+            junitJupiter
+
+    implementation kotlinJdk8,
+            klogging, slf4j, log4j
 }
 
 test {
