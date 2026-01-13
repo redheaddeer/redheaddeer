@@ -1,11 +1,15 @@
 package red.head.deer.controller
 
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RestController
+import jakarta.servlet.http.HttpServletResponse
+import org.springframework.web.bind.annotation.PostMapping
+import red.head.deer.service.SimpleService
 
-@RestController("v1")
 class SimpleController {
 
-    @GetMapping("/start")
-    fun start() {}
+    @PostMapping("/start")
+    fun start(): Any {
+        println("Start test")
+        SimpleService.startService()
+        return HttpServletResponse.SC_FOUND
+    }
 }

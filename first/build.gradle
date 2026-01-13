@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation klogging, slf4j, log4j, springBootJpa, springBootWeb
+    implementation klogging, slf4j, log4j, springBootWeb
 }
 
 test {
