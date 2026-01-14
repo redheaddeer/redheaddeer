@@ -1,4 +1,4 @@
-package red.head.deer.service
+package red.head.deer.first.service
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 

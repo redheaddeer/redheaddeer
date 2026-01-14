@@ -1,4 +1,4 @@
-package red.head.deer
+package red.head.deer.first
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
