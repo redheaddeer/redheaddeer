@@ -9,3 +9,5 @@ plugins {
 rootProject.name = "redheaddeer"
 
 include "first"
+include "tarot-ui"
+include "tarot-app"
