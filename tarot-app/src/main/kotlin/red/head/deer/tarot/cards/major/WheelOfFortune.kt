@@ -1,6 +1,6 @@
 package red.head.deer.tarot.cards.major
 
-class WheelofFortune {
+class WheelOfFortune {
 	val name = "WheelofFortune"
 	val mainDesk = ""
 	val workDesk = ""
