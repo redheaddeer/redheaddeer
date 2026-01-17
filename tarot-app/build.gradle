@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
-group = 'ru.redhead.reed'
+group = 'red.head.deer'
 version = '0.1'
 
 repositories {
