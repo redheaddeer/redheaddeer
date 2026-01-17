@@ -8,6 +8,8 @@ class SimpleService {
     companion object KLogger {
         val log = KotlinLogging.logger("FirstApp")
 
+        var localization: String = "en"
+
         fun startService() {
             log.info { "Start application" }
         }
@@ -15,6 +17,10 @@ class SimpleService {
         fun dayProphecy(): String {
             val card = Random.nextInt(0, Deck().majorArcane.size)
             return Deck().majorArcane[card]
+        }
+
+        fun setLocale(locale: String) {
+            localization = locale
         }
     }
 }
