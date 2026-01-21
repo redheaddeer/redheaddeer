@@ -28,7 +28,7 @@ class Deck {
         Sun().name,
         Temperance().name,
         Tower().name,
-        WheelofFortune().name,
+        WheelOfFortune().name,
         World().name,
     )
 
