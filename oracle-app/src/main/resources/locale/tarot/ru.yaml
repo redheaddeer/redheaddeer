@@ -1,0 +1,174 @@
+odin:
+  name: 'Руна Одина'
+  desc: 'Пустота – это конец, пустота – это начало. Принимайте происходящее, как дань Судьбы. Ничто не предопределено.'
+  revertDesc: 'Пустота – это конец, пустота – это начало. Принимайте происходящее, как дань Судьбы. Ничто не предопределено.'
+  bool: 'Всё не однозначно'
+  revertBool: 'Всё не однозначно'
+
+fehu:
+  name: 'Феу'
+  desc: ''
+  revertDesc: ''
+  bool: 'Да'
+  revertBool: 'Нет'
+
+ansuz:
+  name: 'Ансуз'
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+berkano:
+  name: 'Беркана'
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+dagaz:
+  name: 'Дагаз'
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+ehwas:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+eihwas:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+elhaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+gebo:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+hagalaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+ingwaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+isa:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+jera:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+kenaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+laguz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+mannaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+naudhiz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+othala:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+perthro:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+raido:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+sowilo:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+thurisaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+tiwaz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+uruz:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''
+
+wunjo:
+  name: ''
+  desc: ''
+  revertDesc: ''
+  bool: ''
+  revertBool: ''

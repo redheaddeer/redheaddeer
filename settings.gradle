@@ -8,7 +8,4 @@ plugins {
 }
 rootProject.name = "redheaddeer"
 
-include "first"
-include "tarot-ui"
-include "tarot-app"
-include 'runes-app'
+include "oracle-app"
