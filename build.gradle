@@ -3,17 +3,42 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
-group = 'ru.redhead.reed'
+group = 'red.head.deer'
 version = '0.1'
 
 repositories {
     mavenCentral()
 }
 
+ext {
+    // junit
+    junitBom = "org.junit:junit-bom:5.10.0"
+    junitJupiter = "org.junit.jupiter:junit-jupiter"
+
+    // kotlin
+    kotlinJdk8 =  "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    // logger
+    klogging = "io.github.oshai:kotlin-logging-jvm:7.0.13"
+    slf4j = "org.slf4j:slf4j-api:2.0.17"
+    log4j = "ch.qos.logback:logback-classic:1.4.14"
+
+
+    // spring
+    springVer = "3.5.7"
+    springBootJpa = "org.springframework.boot:spring-boot-starter-data-jpa:$springVer"
+    springBootWeb = "org.springframework.boot:spring-boot-starter-web:$springVer"
+
+    lombok = "org.projectlombok:lombok"
+}
+
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation platform(junitBom),
+            junitJupiter
+
+    implementation kotlinJdk8,
+            klogging, slf4j, log4j, springBootJpa, springBootWeb
 }
 
 test {

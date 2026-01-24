@@ -1,0 +1,153 @@
+#container {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+body {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;                     /* Запретить повторение изображения */
+    background-size: cover;                           /* Масштабирует фон до полного покрытия области */
+    background-position: center;                      /* Центрирует изображение */
+    background-attachment: fixed;                     /* Фиксирует фон при прокрутке */
+    color: white; /* Цвет текста, чтобы контрастировал с фоном */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с непрозрачностью 50% */
+    z-index: -1; /* Накладываем позади контента */
+}
+
+h1 {
+    color: #3f51b5;
+    padding-left: 0px;
+}
+
+#output {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 30px;
+    width: 100%;
+}
+
+/* Анимированный эффект контура */
+@keyframes pulse-border {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Для доступности */
+.button-3d:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #8E44AD;
+}
+
+/* Общий стиль */
+body {
+    font-family: Century Gothic, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa; /* Светлый фон страницы */
+    color: #333; /* Основной цвет текста */
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Хедер */
+header {
+    background-color: #EDE7FA; /* Бледно-сиреневый цвет фона */
+    color: #333; /* Цвет текста */
+    padding-top: 105px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8E44AD; /* Тонкая линия внизу хедера */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень снизу */
+}
+
+header h1 {
+    font-size: 16px;
+    padding-top: 3px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-images {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  top: 3px;
+  left: 50%;
+  place-items: center;
+  display: grid;
+}
+
+.header-images > img {
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  place-items: center;
+  display: grid;
+}
+
+/* Футер */
+footer {
+    background-color: #EDE7FA; /* Бледно-сиреневый цвет фона */
+    color: #333; /* Цвет текста */
+    padding: 15px 15px;
+    text-align: center;
+    border-top: 2px solid #8E44AD; /* Линия сверху футера */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Немного тени вверху */
+    margin-top: auto; /* Чтобы футер прижался ко дну страницы */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Примеры классов для кнопок и элементов навигации */
+nav a, button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Иконка в хедере страницы */
+.main-icon {
+    width: 48px;
+}
+
+/* Поле ввода вопроса */
+.input-tarot {
+    resize: both;
+    width: 300px;
+    height: 25px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}

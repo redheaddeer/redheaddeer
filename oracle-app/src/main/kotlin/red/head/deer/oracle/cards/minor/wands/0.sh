@@ -1,0 +1,14 @@
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass AceOfWands {\n\tval name = \"AceOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > AceOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass EightOfWands {\n\tval name = \"EightOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > EightOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass FiveOfWands {\n\tval name = \"FiveOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > FiveOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass FourOfWands {\n\tval name = \"FourOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > FourOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass KingOfWands {\n\tval name = \"KingOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > KingOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass KnightOfWands {\n\tval name = \"KnightOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > KnightOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass NineOfWands {\n\tval name = \"NineOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > NineOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass PageOfWands {\n\tval name = \"PageOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > PageOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass QueenOfWands {\n\tval name = \"QueenOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > QueenOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass SevenOfWands {\n\tval name = \"SevenOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > SevenOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass SixOfWands {\n\tval name = \"SixOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > SixOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass TenOfWands {\n\tval name = \"TenOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > TenOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass ThreeOfWands {\n\tval name = \"ThreeOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > ThreeOfWands.kt
+echo -e "package red.head.deer.oracle.cards.minor.wands\n\nclass TwoOfWands {\n\tval name = \"TwoOfWands\"\n\tval mainDesk = \"\"\n\tval workDesk = \"\"\n\tval loveDesk = \"\"\n}" > TwoOfWands.kt
