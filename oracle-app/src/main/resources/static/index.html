@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>We want to believe...</title>
+    <title></title>
+    <script defer>
+        fetch('/get-title')
+            .then(response => response.text())
+            .then(data => {
+                if (data && data.title) {
+                    document.title = data.title;
+                }
+            })
+            .catch(document.title = 'We want to believe...');
+    </script>
+
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/buttons.css">
 </head>
 <body>
-<div id="header"></div>
-<div id="container">
-    <h1>Если вы уверены...</h1>
-    <form id="dataForm">
-        <label for="inputData">...задайте свой вопрос</label>
-        <input type="text" id="inputData" placeholder="..." class="input-tarot"><br/><br/>
-        <button type="submit" class="button-3d">Спросить</button>
-    </form>
-    <div id="output"></div>
-</div>
-<script src="./main.js"></script>
-<script src="./components/header.js"></script>
-<footer>
-    <p>© 2025 redheaddeer</p>
-</footer>
+    <div id="header"></div>
+    <table>
+        <tr>
+            <td style="width:30%"><div id="buttons-container" class="buttons-container"></div></td>
+            <td>
+                <h1 id="result-head"></h1>
+                <div id="output"></div>
+            </td>
+        </tr>
+    </table>
+    <script src="./main.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/left-buttons.js"></script>
+    <footer><p>© 2025 redheaddeer</p></footer>
 </body>
 </html>

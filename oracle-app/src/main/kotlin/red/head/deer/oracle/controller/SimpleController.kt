@@ -11,6 +11,11 @@ import red.head.deer.oracle.service.SimpleService
 @RestController
 class SimpleController {
 
+    @GetMapping("/get-title")
+    fun getTitle(): Any {
+        return ResponseEntity.ok().body(SimpleService.getTitle())
+    }
+
     @PostMapping("/start")
     fun start(): Any {
         println("Start test")
