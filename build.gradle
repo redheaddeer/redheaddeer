@@ -30,6 +30,8 @@ ext {
     springBootWeb = "org.springframework.boot:spring-boot-starter-web:$springVer"
 
     lombok = "org.projectlombok:lombok"
+
+    netty = "io.projectreactor.netty:reactor-netty-http:1.2.8"
 }
 
 dependencies {

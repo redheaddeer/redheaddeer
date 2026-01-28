@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('components/header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data)
-        .catch(error => console.error('Ошибка:', error));
+    const images = document.querySelectorAll('.header-images img');
 
-    fetch('components/popup.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data)
-        .catch(error => console.error('Ошибка:', error));
+    for (let i = 0; i < images.length; i++) {
+        images[0].classList.remove('active');
+        images[1].classList.remove('active');
+        images[2].classList.remove('active');
+        images[i].classList.add('active');
+    }
 });

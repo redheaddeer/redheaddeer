@@ -25,7 +25,8 @@ class SimpleController {
 
     @GetMapping("/day-prophecy")
     fun dayProphecy(): Any {
-        val res = "Ваша карта дня... ${SimpleService.dayProphecy()}"
+        val anyCard = SimpleService.dayProphecy()
+        val res = "Ваша карта дня... ${anyCard[0]}\n${anyCard[1]}"
         return ResponseEntity.ok().body(res)
     }
 

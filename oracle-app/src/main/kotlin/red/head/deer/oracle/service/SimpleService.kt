@@ -40,7 +40,7 @@ class SimpleService {
             log.info { "Start application" }
         }
 
-        fun dayProphecy(): String {
+        fun dayProphecy(): List<String> {
             val card = Random.nextInt(0, Deck().majorArcane.size)
             return Deck().majorArcane[card]
         }

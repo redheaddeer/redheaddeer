@@ -96,6 +96,42 @@ header h1 {
     font-weight: bold;
 }
 
+/* Основной стиль контейнера */
+.header-images {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%); /* Центруем контейнер относительно родителя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Общие настройки для изображений */
+.header-images > img {
+    transition: opacity 1s ease-in-out; /* Время перехода прозрачности */
+    position: absolute; /* Для наложения друг на друга */
+    z-index: 1; /* Изображения будут накладываться одно поверх другого */
+    object-fit: contain; /* Сохраняем пропорции картинки */
+}
+
+/* Начальное состояние видимости изображений */
+#img1 {opacity: 1;}
+#img2,
+#img3 {opacity: 0.1;}
+
+@keyframes fadeInOut {
+    0%, 100% {opacity: 1;} /* Видимое изображение */
+    50% {opacity: 0.1;} /* Исчезающее изображение */
+}
+
+/* Настройка анимаций */
+#img1.active {animation: fadeInOut 8s infinite alternate-reverse;}
+#img2.active {animation-delay: 2s; animation: fadeInOut 8s infinite alternate-reverse;}
+#img3.active {animation-delay: 4s; animation: fadeInOut 8s infinite alternate-reverse;}
+
 .header-images {
   position: relative;
   width: fit-content;
