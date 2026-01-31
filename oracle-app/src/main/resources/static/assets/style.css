@@ -35,6 +35,21 @@ h1 {
     padding: 10px;
     margin-left: 20px;
     width: 90%;
+    white-space: pre-wrap;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 /* Анимированный эффект контура */
