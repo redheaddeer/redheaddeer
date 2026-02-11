@@ -4,3 +4,12 @@ server:
 spring:
   application:
     name: oracle-app
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: TRACE
+
+oracle:
+  rune: true
+  tarot: true

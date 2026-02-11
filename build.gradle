@@ -17,6 +17,7 @@ ext {
 
     // kotlin
     kotlinJdk8 =  "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    kotlinBom = "org.jetbrains.kotlin:kotlin-bom"
 
     // logger
     klogging = "io.github.oshai:kotlin-logging-jvm:7.0.13"
@@ -36,7 +37,7 @@ ext {
 
 dependencies {
 
-    testImplementation platform(junitBom),
+    testImplementation platform(junitBom), platform(kotlinBom),
             junitJupiter
 
     implementation kotlinJdk8,
