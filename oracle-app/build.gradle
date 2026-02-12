@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm'
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'org.springframework.boot' version '3.1.4'
 }
 
 group = 'red.head.deer'
@@ -11,6 +11,12 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    implementation {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+}
+
 dependencies {
     implementation klogging, slf4j, log4j, springBootWeb, netty, platform(kotlinBom), kotlinJdk8
 }
@@ -18,11 +24,27 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(21)
 }
-jar {
+
+jar.enabled = false
+bootJar.enabled = true
+
+//jar {
+//    manifest {
+//        attributes('Main-Class': 'red.head.deer.oracle.OracleAppKt')
+//        attributes('Class-Path': './')
+//    }
+//}
+
+springBoot {
+    mainClass.set('red.head.deer.oracle.OracleAppKt')
+}
+bootJar {
     manifest {
         attributes('Main-Class': 'red.head.deer.oracle.OracleAppKt')
+        attributes('Class-Path': './')
     }
 }
